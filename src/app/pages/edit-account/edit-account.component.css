@@ -1,0 +1,26 @@
+
+.img{
+    width: 100px;
+}
+input{
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+.bg{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.form-label{
+    color: #000;
+}
+
+.btnFile{
+    width: 100%;
+}
+
+
+.m-top{
+    margin-top: 40px;
+    }

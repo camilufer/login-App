@@ -2,16 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { UsuarioModel } from '../models/usuario.models';
 import { map } from 'rxjs/operators';
-
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-
   private url = 'https://identitytoolkit.googleapis.com/v1';
   private apikey = 'AIzaSyDK6F5_PdiJriRxj_SBgOzTmstAkXTDFVA';
 
   userToken: string = null;
+  usrMail: string = null;
 
   // Crear nuevo usuario
   // https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
@@ -25,11 +24,9 @@ export class AuthService {
   }
 
 
-
   logout() {
     localStorage.removeItem('token');
   }
-
 
   login( usuario: UsuarioModel ) {
 
@@ -45,16 +42,14 @@ export class AuthService {
       authData
     ).pipe(
       map( response => {
-          console.log('entro en el map login');
-          this.guardarToken(response['idToken']);
-          return response;
+        const usrMail = authData.email;
+          console.log(usrMail,'entro en el map login');
+          this.guardarToken(response['idToken']);     
+          return response;   
       })
+      
     );
-
   }
-
-
-
 
   nuevoUsuario( usuario: UsuarioModel ) {
     const authData = {
@@ -91,6 +86,7 @@ export class AuthService {
 
 
 
+
   leerToken() {
     if( localStorage.getItem('token')) {
       this.userToken = localStorage.getItem('token');
@@ -107,19 +103,16 @@ export class AuthService {
         return false;
     }
 
-
     const expira = Number(localStorage.getItem('expira'));
     const expiraDate = new Date();
     expiraDate.setTime(expira);
-
+    
 
     if(expiraDate > new Date()) {
       return true;
     } else {
       return false;
     }
-
-    return this.userToken.length > 2;
   }
 
 }

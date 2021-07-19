@@ -1,0 +1,78 @@
+<nav  class="navbar navbar-expand-lg  navbar-light bg-light ">
+  <div class="container">
+      <div class="col">
+          <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/logo.png" alt=""></a>
+      </div>
+      <div class="col col-md-auto">
+          <button class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          $12000
+        </button>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fas fa-sync-alt"></i> Refrescar Saldo</a></li>
+              <li>
+                  <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="button-payment"><i class="fas fa-plus"></i> Agregar dinero</a></li>
+              <li><a class="dropdown-item" href="money-withdrawal"><i class="fas fa-money-bill-alt"></i> Retirar dinero</a></li>
+              <li><a class="dropdown-item" href="account-statement"><i class="fas fa-list-alt"></i> Ver Estado Cuenta</a></li>
+          </ul>
+      </div>
+      <div class="col col-md-auto">
+
+          <button class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Cuenta
+        </button>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="edit-account"><i class="fas fa-edit"></i> Editar Datos</a></li>
+              <li><a class="dropdown-item" href="my-raffles"><i class="fas fa-eye"></i> Ver mis Rifas</a></li>
+              <li>
+                  <hr class="dropdown-divider">
+              </li>
+              <li><a (click)="salir()"  class="dropdown-item" ><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid sticky-top">
+  <div class="row justify-content-center">
+      <div class="borde-a col-3 col-lg-2" routerLink="/home">
+          <div>
+              <div class="change-icon" (mouseover)="changeText=true" (mouseout)="changeText=false">
+                  <i *ngIf="!changeText" class="fasmenu2 nav-link fas fa-door-closed"></i>
+                  <i *ngIf="changeText" class="fasmenu2 nav-link fas fa-door-open"></i>
+              </div>
+              <a class="nav-link active text" aria-current="page">Inicio</a>
+          </div>
+      </div>
+      <div class="borde-b col-3 col-lg-2" routerLink="/create">
+          <div>
+              <div class="change-icon" (mouseover)="changeText2=true" (mouseout)="changeText2=false">
+                  <i *ngIf="!changeText2" class="fasmenu2 nav-link fas fa-plus"></i>
+                  <i *ngIf="changeText2" class="fasmenu2 nav-link fas fa-times"></i>
+              </div>
+              <a class="nav-link active text" aria-current="page">Crear</a>
+          </div>
+      </div>
+      <div class="borde-c col-3 col-lg-2" routerLink="/about">
+          <div>
+              <div class="change-icon" (mouseover)="changeText3=true" (mouseout)="changeText3=false">
+                  <i *ngIf="!changeText3" class="fasmenu2 nav-link fas fa-flushed "></i>
+                  <i *ngIf="changeText3" class="fasmenu2 nav-link fas fa-smile-wink "></i>
+              </div>
+              <a class="nav-link active text" aria-current="page">Sobre nosotros</a>
+          </div>
+      </div>
+      <div class="borde-d col-3 col-lg-2" routerLink="/frequent-questions">
+          <div>
+              <div class="change-icon" (mouseover)="changeText4=true" (mouseout)="changeText4=false">
+                  <i *ngIf="!changeText4" class="fasmenu2 nav-link fas fa-question "></i>
+                  <i *ngIf="changeText4" class="fasmenu2 nav-link fas fa-comment-dots "></i>
+              </div>
+              <a class="nav-link active text" aria-current="page">Preguntas frecuentes</a>
+          </div>
+      </div>
+  </div>
+</div>

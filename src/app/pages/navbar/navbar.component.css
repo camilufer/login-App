@@ -1,0 +1,133 @@
+.navbarColor{
+    background-color: #222222;
+   
+}
+
+
+.btnSaldo{
+    background-color: #FFC312;
+}
+
+.alert{
+  color: #FFC312;
+  padding: 0;
+  font-size: 30px;
+  margin-top: 15px;
+
+}
+
+.yellow{
+    color: #FFC312;
+}
+.logo{
+    width: 200px;
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+
+.nav-item2{
+    margin-right: 10px;
+}
+
+li{
+    list-style:none;
+}
+
+.icSmile{
+    padding-left: 0px;
+}
+
+.text{
+    color:#919191;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    
+}
+
+
+.borde-a{
+    padding: 0;
+    border-bottom: 4px solid #E3350D;
+}
+.borde-b{
+    padding: 0;
+    border-bottom: 4px solid  #E6B62F;
+}
+
+.borde-c{
+    padding: 0;
+    border-bottom: 4px solid  #4DAD5B;
+}
+
+.borde-d{
+    padding: 0;
+    border-bottom: 4px solid  #30A7D7;
+}
+
+.fasmenu2{
+        display: block;
+
+}
+
+
+
+
+.div1:hover{
+    background-color: #E3350D;
+    color: #fff;
+    cursor: pointer;
+}
+.div2:hover{
+    background-color: #E6B62F;
+    color: #fff;
+}
+
+.div3:hover{
+    background-color: #4DAD5B;
+    color: #fff;
+}
+
+.div4:hover{
+     background-color: #30A7D7;
+     color: #fff;
+ }
+
+
+.fasmenu2{
+    color:#919191;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px; 
+    padding-bottom: 0;
+}
+
+.fasmenu1{
+    color:#fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px; 
+    padding-bottom: 0;
+}
+
+a{
+    padding-top: 2px;
+    color:#919191;
+}
+
+.btn{
+    background-color: #E3350D;
+    color: #fff;
+}
+
+.sticky-top{
+    z-index: 999;
+    background: rgb(248,249,250);
+    background: linear-gradient(90deg, rgba(248,249,250,1) 100%, rgba(252,253,253,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%);
+}
+
+.navbarDropdown{
+    z-index: 9999;
+}

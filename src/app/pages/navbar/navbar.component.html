@@ -19,37 +19,37 @@
 <div class="container-fluid sticky-top">
   <div class="row justify-content-center">
       <div class="borde-a col-3 col-lg-2" routerLink="/home">
-          <div class="div1" (mouseover)="changeText=true" (mouseout)="changeText=false">
+          <div class="div1" >
               <div class="change-icon" >
-                  <i *ngIf="!changeText" class="fasmenu2 nav-link fas fa-door-closed"></i>
-                  <i *ngIf="changeText" class="fasmenu1 nav-link fas fa-door-open"></i>
+                
+                  <i  class="fasmenu1 nav-link fas fa-door-open"></i>
               </div>
               <a class="nav-link active text" aria-current="page">Inicio</a>
           </div>
       </div>
       <div class="borde-b col-3 col-lg-2" routerLink="/create">
-          <div class="div2" (mouseover)="changeText2=true" (mouseout)="changeText2=false">
+          <div class="div2">
               <div class="change-icon" >
-                  <i *ngIf="!changeText2" class="fasmenu2 nav-link fas fa-plus"></i>
-                  <i *ngIf="changeText2" class="fasmenu1 nav-link fas fa-times"></i>
+                 
+                  <i  class="fasmenu1 nav-link fas fa-times"></i>
               </div>
               <a class="nav-link active text" aria-current="page">Crear</a>
           </div>
       </div>
       <div class="borde-c col-3 col-lg-2" routerLink="/about">
-          <div class="div3" (mouseover)="changeText3=true" (mouseout)="changeText3=false">
+          <div class="div3" >
               <div class="change-icon" >
-                  <i *ngIf="!changeText3" class="fasmenu2 nav-link fas fa-flushed "></i>
-                  <i *ngIf="changeText3" class="fasmenu1 nav-link fas fa-smile-wink "></i>
+                 
+                  <i  class="fasmenu1 nav-link fas fa-smile-wink "></i>
               </div>
               <a class="nav-link active text" aria-current="page">Sobre nosotros</a>
           </div>
       </div>
       <div class="borde-d col-3 col-lg-2" routerLink="/frequent-questions">
-          <div class="div4" (mouseover)="changeText4=true" (mouseout)="changeText4=false">
+          <div class="div4" >
               <div class="change-icon" >
-                  <i *ngIf="!changeText4" class="fasmenu2 nav-link fas fa-question "></i>
-                  <i *ngIf="changeText4" class="fasmenu1 nav-link fas fa-comment-dots "></i>
+                
+                  <i  class="fasmenu1 nav-link fas fa-comment-dots "></i>
               </div>
               <a class="nav-link active text" aria-current="page">Preguntas frecuentes</a>
           </div>

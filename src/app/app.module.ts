@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; // para trabajar con formularios
-import { AppRoutingModule } from './app-routing.module';
+//import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -23,6 +23,12 @@ import { AboutComponent } from './pages/about/about.component';
 import { FrequentQuestionsComponent } from './pages/frequent-questions/frequent-questions.component';
 import { CarouselComponent } from './pages/carousel/carousel.component';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HeroeComponent } from './pages/heroe/heroe.component';
+import { HeroeTarjetaComponent } from './pages/heroe-tarjeta/heroe-tarjeta.component';
+import { HeroesComponent } from './pages/heroes/heroes.component';
+import { APP_ROUTING } from './app-routing.module';
+import { HeroesService } from './services/heroes.service';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -44,16 +50,23 @@ import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
     CreateComponent,
     AboutComponent,
     FrequentQuestionsComponent,
-    CarouselComponent
+    CarouselComponent,
+    HeroeComponent,
+    HeroeTarjetaComponent,
+    HeroesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    APP_ROUTING
+
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

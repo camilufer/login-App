@@ -11,7 +11,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
   }
-  lista:string[]=["hola","que","tal","estas"];
+  
 
   cards: any[]= [
     {

@@ -51,7 +51,6 @@ li{
 .borde-a{
     padding: 0;
     border-bottom: 4px solid #E3350D;
-  
 }
 .borde-b{
     padding: 0;
@@ -73,13 +72,41 @@ li{
 
 }
 
-
-
-
-
-
 .fasmenu2{
     color:#919191;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px; 
+    padding-bottom: 0;
+}
+
+
+
+.div1:hover{
+    background-color: #E3350D;
+    color: #fff;
+    cursor: pointer;
+}
+.div2:hover{
+    background-color: #E6B62F;
+    color: #fff;
+}
+
+.div3:hover{
+    background-color: #4DAD5B;
+    color: #fff;
+}
+
+.div4:hover{
+     background-color: #30A7D7;
+     color: #fff;
+ }
+
+
+
+
+.fasmenu1{
+    color:#fff;
     text-align: center;
     font-weight: bolder;
     font-size: 30px; 

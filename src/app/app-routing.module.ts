@@ -14,7 +14,8 @@ import { MyRafflesComponent } from './pages/my-raffles/my-raffles.component';
 import { CreateComponent } from './pages/create/create.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FrequentQuestionsComponent } from './pages/frequent-questions/frequent-questions.component';
-
+import { HeroesComponent } from './pages/heroes/heroes.component'
+import { HeroeComponent } from './pages/heroe/heroe.component';
 
 const routes: Routes = [
  //{ path: 'home', component: HomeComponent, canActivate: [ AuthGuard ] }, // Estamos bloqueando esta ruta para que solo aparezca logeado
@@ -31,12 +32,13 @@ const routes: Routes = [
   { path: 'create'   , component: CreateComponent }, 
   { path: 'about'   , component: AboutComponent },  
   { path: 'frequent-questions'   , component: FrequentQuestionsComponent },
-  
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'heroe/:idpersonalizado', component: HeroeComponent },
+
   { path: '**', redirectTo: 'no-user' }
 ];
 
-@NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
-})
-export class AppRoutingModule { }
+
+
+
+export const APP_ROUTING = RouterModule.forRoot(routes);
